@@ -14,8 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('matakuliahs', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->char('kode_matakuliah', 8);
+            $table->text('nama_matakuliah');
+            $table->tinyInteger('sks');
         });
     }
 
