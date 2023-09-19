@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/index', function () {
     return view('index');
 });
-Route::get('/Selamatdatanxg', function () {
+Route::get('/Selamatdatang', function () {
     return view('Selamat Datang');
 });
 
