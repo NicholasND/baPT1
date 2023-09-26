@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('khs', function (Blueprint $table) {
             $table->char('kode_khs', 10);
-            $table->id('mahasiswa: mahasiswa');
             $table->text('keterangan');
             $table->char('keterangan_singkat', 100);
-            $table->id('term: term');
         });
     }
 
