@@ -16,8 +16,7 @@ return new class extends Migration
         Schema::create('khs_details', function (Blueprint $table) {
             $table->char('kode_khs_detail', 8);
             $table->char('kode_khs', 8);
-            $table->id('matakuliah: matakuliah');
-            $table->tinyInteger('nilai');
+            $table->integer('nilai');
         });
     }
 
