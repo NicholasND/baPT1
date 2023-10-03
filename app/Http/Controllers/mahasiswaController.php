@@ -14,6 +14,8 @@ class mahasiswaController extends Controller
     public function index()
     {
         //
+        $mahasiswa = mahasiswa::where('id', '>', 90)->get();
+        return view('mahasiswa')->with('mahasiswa',$mahasiswas);
     }
 
     /**
