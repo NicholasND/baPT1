@@ -1,69 +1,92 @@
 @extends('layouts.app')
-@section('title','Home')
-@section('content')
-<div>
-    <p style="text-align:center; font-size: 48px; margin-top:36px; font-weight: bold">Profil Biodata</p>
-    <div class="container" style="max-width:70%">
-        <div class="row bold-font">
-            <div class="col-3">
-                Nama
-            </div>
-            <div class="col-9">
-                : Nicholas Dickson
-            </div>
-        </div>
-        <div class="row bold-font">
-            <div class="col-3">
-                NIM
-            </div>
-            <div class="col-9">
-                : 03081210020
-            </div>
-        </div>
-        <div class="row bold-font">
-            <div class="col-3">
-                Kelas
-            </div>
-            <div class="col-9">
-                : 21SI2
-            </div>
-        </div>
-        <div class="row bold-font">
-            <div class="col-3">
-                Jurusan
-            </div>
-            <div class="col-9">
-                : Sistem Informasi
-            </div>
-        </div>
-    </div>
-@endsection
-<link href ="https//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stlyesheet">
+<head>
     <style>
         th {
-            border: 1px solid black;
-            padding: 8px;
-            font-weight: bold;
+            border: 1px solid;
             text-align: center;
+            padding: 12px;
         }
         td {
-            border: 1px solid black;
-            padding: 8px;
+            border: 1px solid;
             text-align: center;
         }
-        .bold-font {
-            font-weight: bold;
+        p{
+            margin: 10;
         }
-        </style>
-<html>
-    <head>
-        <title>Profil Saya</title>
-    </head>
-    <body>
-        <h1>Profil Biodata</h1>
-        <h2>Nama : Nicholas Dickson</h2>
-        <h3>NIM : 03081210020</h3>
-        <h4>Kelas : 21SI2</h4>
-        <h5>Jurusan : Sistem Informasi</h5>
-    </body>
-<html>
+    </style>
+</head>
+
+@section('title', 'Profil')
+@section ('content')
+<body>
+    <h1>Profile</h1>
+    <div class="table-container">
+        <p> Nama : Nicholas Dickson </p>
+        <p> Umur : 20 Tahun </p>
+        <p> Student ID : 03081210020</p>
+        <p> Email : nicholasdickson86@gmail.com </p>
+        <p> Kelas : 21SI2</p>
+        <p> Jurusan : Sistem Informasi</p>
+        <p> Alamat : Jln Thamrin Baru no 68 Medan</p>
+        <p> Universitas : Universitas Pelita Harapan</p>
+    </div>
+    <h2 align="left">Matakuliah</h2>
+    <table border="1" width="700px" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Matakuliah</th>
+                <th>Nama Dosen</th>
+                <th>Kelas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Senin</td>
+                <td>17:30 - 20:10</td>
+                <td>Accounting and Finance</td>
+                <td>Lisa Salim</td>
+                <td>Kelas 109</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>17:30 - 21:00</td>
+                <td>Pemrograman Aplikasi Bisnis</td>
+                <td>Ade Maulana</td>
+                <td>Kelas 101</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>17:30 - 20:10</td>
+                <td>Manajemen Strategis Perusahaan</td>
+                <td>Romindo</td>
+                <td>Kelas 101</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>17:30 - 21:00</td>
+                <td>Audit dan Kontrol Sistem Informasi</td>
+                <td>Ade Maulana</td>
+                <td>Kelas 101</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>17:30 - 20:10</td>
+                <td>Pemasaran digital</td>
+                <td>Okky Barus</td>
+                <td>Kelas 109</td>
+            </tr>
+            <tr>
+                <td>Sabtu</td>
+                <td>13:00 - 15:30</td>
+                <td>Sistem Informasi Perusahaan</td>
+                <td>Ade Maulana</td>
+                <td>Kelas 101</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+@endsection
