@@ -15,7 +15,7 @@
         }
 
         nav a:hover {
-            background-color: red;
+            background-color: rgb(51, 255, 0);
         }
 
         .fixed-header,
@@ -54,6 +54,7 @@
         <a href="/">Home</a>
         <a href="/profil">Profil</a>
         <a href="/mahasiswa">Mahasiswa</a>
+        <a href="/matakuliah">Matakuliah</a>
     </div>
     <div class="content">
         @yield('content')
