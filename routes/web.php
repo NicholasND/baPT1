@@ -30,3 +30,8 @@ Route::get('/profil', function () {
 Route::get('/mahasiswa', [mahasiswaController::class, 'index']); 
     //return view('mahasiswa');
 Route::get('/matakuliah', [matakuliahController::class, 'index']);
+
+Route::get('/Program_Studi', [Program_StudiController::class, 'index']); 
+    //return view('Program_Studi');
+Route::get('/Pembayaran', [PembayaranController::class, 'index']);
+Route::get('/Transkrip_Akademik', [Transkrip_AkademikController::class, 'index']); 
