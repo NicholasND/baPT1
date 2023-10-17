@@ -20,6 +20,7 @@ use App\Models\mahasiswa;
     <div class= "container">
         <p style= "font-size: 36px ; font-weight: bold ; text-align: start ; margin: 40px 0 0 0">DATA MAHASISWA</p>     
         <table style= "margin-top: 16px">
+            <table table-bordered table-hover>
             <tr>
                 <th>ID</th>
                 <th>StudentID</th>
