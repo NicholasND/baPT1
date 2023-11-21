@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mahasiswaController;
+use App\Http\Controllers\laporanMahasiswaController;
 use App\Http\Controllers\matakuliahController;
 
 /*
@@ -35,3 +36,13 @@ Route::get('/Program_Studi', [Program_StudiController::class, 'index']);
     //return view('Program_Studi');
 Route::get('/Pembayaran', [PembayaranController::class, 'index']);
 Route::get('/Transkrip_Akademik', [Transkrip_AkademikController::class, 'index']); 
+
+Route::get('/laporan', [LaporanController::class,'index']);
+Route::get('/laporan/cetak_pdf', [LaporanController::class,'cetak_pdf']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
